@@ -1,0 +1,55 @@
+body{
+    font-family: Arial, sans-serif;
+    align-items: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+#tit {
+    text-align: center;
+    font-size: 40px;
+    color: red;
+}
+
+#but {
+    height: auto; /* Let height be determined by the content */
+    width: auto;  /* Let width be determined by the content */
+    padding: 10px 20px; /* Add some padding for better appearance */
+    color: white;
+    background-color: blue; /* Set a background color for better visibility */
+    font-size: 20px;
+    display: block; /* Make it block-level to apply margin auto */
+    margin: 20px auto; /* Center the button horizontally and add top/bottom margin */
+    text-align: center;
+    border: none;
+    border-radius: 5px; /* Optional: add some border radius */
+    cursor: pointer; /* Optional: change cursor to pointer */
+}
+#city {
+    height: auto;
+    width: auto;
+    font-size: 20px;
+    text-align: center;
+    display: block;      /* Corrected 'diplay' to 'display' */
+    margin: 0 auto;      /* This centers the input horizontally */
+}
+
+.card{
+    background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+    padding: 50px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+    
+}
+p{
+    font-size: 3.5rem;
+    margin: 5px 0;
+}
+.cityDisplay, .tempDisplay{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.weatherEmoji{
+    margin: 0;
+    font-size: 7.5rem;
+}
