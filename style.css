@@ -1,4 +1,4 @@
-
+/* style.css */
 
 body {
     font-family: Arial, sans-serif;
@@ -7,28 +7,36 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    background: url('your-background-image.jpg') no-repeat center center fixed; /* Set a background image */
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.8), rgba(0, 100, 200, 0.8)), 
+                url('https://source.unsplash.com/1600x900/?weather') no-repeat center center fixed; /* Example background image */
     background-size: cover;
+    animation: backgroundAnimation 15s infinite; /* Animation effect */
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
 }
 
 #tit {
     text-align: center;
-    font-size: 3rem; /* Adjusted font size for responsiveness */
+    font-size: 3rem;
     color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add text shadow for better visibility */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     margin-top: 20px;
 }
 
 #city {
     height: 50px;
-    width: 300px; /* Set a specific width for better layout */
+    width: 300px;
     font-size: 20px;
     text-align: center;
-    margin: 20px auto; /* Center the input horizontally */
-    border: 2px solid white; /* White border for visibility */
+    margin: 20px auto;
+    border: 2px solid white;
     border-radius: 5px;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    background: rgba(255, 255, 255, 0.8);
 }
 
 #but {
@@ -41,23 +49,23 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for hover effect */
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 #but:hover {
-    background-color: darkblue; /* Darker shade on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    background-color: darkblue;
+    transform: scale(1.05);
 }
 
 .card {
-    background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+    background: rgba(255, 255, 255, 0.9);
     padding: 50px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px; /* Rounded corners */
-    animation: fadeIn 1s ease; /* Fade in animation */
-    max-width: 400px; /* Limit card width */
-    margin: 20px; /* Margin around the card */
-    text-align: center; /* Center text inside the card */
+    border-radius: 10px;
+    animation: fadeIn 1s ease;
+    max-width: 400px;
+    margin: 20px;
+    text-align: center;
 }
 
 @keyframes fadeIn {
@@ -70,17 +78,17 @@ body {
 }
 
 p {
-    font-size: 1.5rem; /* Adjusted font size */
+    font-size: 1.5rem;
     margin: 5px 0;
-    color: #333; /* Darker color for better readability */
+    color: #333;
 }
 
 .cityDisplay, .tempDisplay {
-    font-size: 2rem; /* Adjusted font size */
+    font-size: 2rem;
     font-weight: bold;
 }
 
 .weatherEmoji {
     margin: 0;
-    font-size: 4rem; /* Adjusted emoji size */
+    font-size: 4rem;
 }
